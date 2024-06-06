@@ -48,8 +48,8 @@ namespace BulkyWeb.Controllers
             {
                 return NotFound();
             }
-           // Category category = _db.Categories.Find(id);
-           Category? category = _db.Categories.FirstOrDefault(u=>u.CategoryId==id);
+            Category? category = _db.Categories.Find(id);
+         /*  Category? category = _db.Categories.FirstOrDefault(u=>u.CategoryId==id)*/;
             if (category == null)
             {
                 return NotFound();
